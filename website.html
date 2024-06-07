@@ -1,89 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Votre livre à Essaouira</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        color: white;
-        background-color: black;
-    }
-    header {
-        background-color: blue;
-        padding: 10px 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    header img {
-        height: 50px;
-        transition: transform 0.3s ease;
-    }
-    header img:hover {
-        transform: scale(1.1);
-    }
-    header h1 {
-        color: white;
-        text-align: center;
-        flex-grow: 1;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    }
-    .gallery {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 20px;
-        background-color: gray;
-    }
-    .photo {
-        width: 25%; 
-        margin: 10px;
-        background-color: white;
-        padding: 10px;
-        box-sizing: border-box;
-        border: 1px solid #ccc;
-        box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
-        transition: transform 0.3s ease;
-    }
-    .photo:hover {
-        transform: translateY(-10px);
-        box-shadow: 10px 10px 20px rgba(0,0,0,0.8);
-    }
-    .photo img {
-        width: 100%;
-        height: auto;
-        cursor: pointer;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre livre à Essaouira</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background: linear-gradient(to right, #b30000d6, #0096c7);
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 5px;
+            border-bottom: 2px solid #ccc;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+        }
+
+        header img {
+            height: 90px;
+            border-radius: 10%;
+            transition: transform 0.3s ease;
+        }
+
+        header img:hover {
+            transform: translateZ(50px) scale(1.05);
+        }
+
+        header h1 {
+            color: #fff;
+            text-align: center;
+            flex-grow: 1;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            transform: translateZ(30px);
+            transition: transform 0.3s ease;
+        }
+
+        header h1:hover {
+            transform: translateZ(50px) scale(1.05);
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #e2e2e2;
+        }
+
+        .photo {
+            width: 25%;
+            margin: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+            background-color: #ffffff;
+        }
+
+        .photo:hover {
+            transform: translateY(-5px);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .photo img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+
+        .photo h2 {
+            text-align: center;
+            color: #333;
+        }
+    </style>
 </head>
+
 <body>
-<header>
-    <img src="1.avif" alt="Logo">
-    <h1>Votre livre à Essaouira</h1>
-</header>
-<div class="gallery">
-    <div class="photo">
-        <a href="link-to-page-1.html"><img src="1.avif" alt="Photo 1"></a>
+    <header>
+        <img src="logo.png" alt="Logo" id="logo">
+        <h1>Votre livre à EST Essaouira</h1>
+    </header>
+    <div class="gallery">
+        <div class="photo">
+            <a href="link-to-page-1.html"><img src="gi.jpg" alt="Photo 1"></a>
+            <h2>Génie Informatique</h2>
+        </div>
+        <div class="photo">
+            <a href="link-to-page-2.html"><img src="idsd.avif" alt="Photo 2"></a>
+            <h2>Informatique Décisionnelle et Sciences de Données</h2>
+        </div>
+        <div class="photo">
+            <a href="link-to-page-3.html"><img src="er.jpeg" alt="Photo 3"></a>
+            <h2>Energies Renouvelables</h2>
+        </div>
+        <div class="photo">
+            <a href="link-to-page-4.html"><img src="ge.jpeg" alt="Photo 4"></a>
+            <h2>Génie de l'Environment</h2>
+        </div>
+        <div class="photo">
+            <a href="link-to-page-5.html"><img src="mt.jpeg" alt="Photo 5"></a>
+            <h2>Management du Tourisme</h2>
+        </div>
+        <div class="photo">
+            <a href="link-to-page-6.html"><img src="tm.jpeg" alt="Photo 6"></a>
+            <h2>Technique de Management</h2>
+        </div>
     </div>
-    <div class="photo">
-        <a href="link-to-page-2.html"><img src="1.avif" alt="Photo 2"></a>
-    </div>
-    <div class="photo">
-        <a href="link-to-page-3.html"><img src="1.avif" alt="Photo 3"></a>
-    </div>
-    <div class="photo">
-        <a href="link-to-page-4.html"><img src="1.avif" alt="Photo 4"></a>
-    </div>
-    <div class="photo">
-        <a href="link-to-page-5.html"><img src="1.avif" alt="Photo 5"></a>
-    </div>
-    <div class="photo">
-        <a href="link-to-page-6.html"><img src="1.avif" alt="Photo 6"></a>
-    </div>
-</div>
 </body>
+
 </html>
