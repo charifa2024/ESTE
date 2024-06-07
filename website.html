@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Votre livre à Essaouira</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: white;
+        background-color: black;
+    }
+    header {
+        background-color: blue;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header img {
+        height: 50px;
+        transition: transform 0.3s ease;
+    }
+    header img:hover {
+        transform: scale(1.1);
+    }
+    header h1 {
+        color: white;
+        text-align: center;
+        flex-grow: 1;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+        background-color: gray;
+    }
+    .photo {
+        width: 25%; 
+        margin: 10px;
+        background-color: white;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+        transition: transform 0.3s ease;
+    }
+    .photo:hover {
+        transform: translateY(-10px);
+        box-shadow: 10px 10px 20px rgba(0,0,0,0.8);
+    }
+    .photo img {
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<header>
+    <img src="1.avif" alt="Logo">
+    <h1>Votre livre à Essaouira</h1>
+</header>
+<div class="gallery">
+    <div class="photo">
+        <a href="link-to-page-1.html"><img src="1.avif" alt="Photo 1"></a>
+    </div>
+    <div class="photo">
+        <a href="link-to-page-2.html"><img src="1.avif" alt="Photo 2"></a>
+    </div>
+    <div class="photo">
+        <a href="link-to-page-3.html"><img src="1.avif" alt="Photo 3"></a>
+    </div>
+    <div class="photo">
+        <a href="link-to-page-4.html"><img src="1.avif" alt="Photo 4"></a>
+    </div>
+    <div class="photo">
+        <a href="link-to-page-5.html"><img src="1.avif" alt="Photo 5"></a>
+    </div>
+    <div class="photo">
+        <a href="link-to-page-6.html"><img src="1.avif" alt="Photo 6"></a>
+    </div>
+</div>
+</body>
+</html>
